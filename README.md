@@ -19,8 +19,8 @@ year = {2018}
 - Nvidia GPUs (training takes 1 day on 4 Titan Xp GPUs)
 - At least 16G RAM 
 - ``Python3``
-- ``Pytorch 0.4``
-- ``tensorboardX``
+- ``Pytorch 1.3``
+- ``tensorboardX 1.1``
 - ``tqdm``
 - ``imageio``
 
