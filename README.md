@@ -15,6 +15,13 @@ year = {2018}
 
 ![PSNR vs PESR](https://github.com/thangvubk/PESR/blob/master/docs/PSNR_PESR.PNG)
 
+docker: 
+
+docker  run -it --gpus all  songyi1999/pesr bash
+pip install tensorboardX==1.1
+
+
+
 ## Dependencies
 - Nvidia GPUs (training takes 1 day on 4 Titan Xp GPUs)
 - At least 16G RAM 
