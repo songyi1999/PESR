@@ -1,1 +1,4 @@
 *.pyc
+result/*
+check_point/*
+data/*

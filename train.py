@@ -57,7 +57,7 @@ parser.add_argument('--patch_size', type=int, default=24,
 # checkpoint
 parser.add_argument('--check_point', type=str, default='check_point/my_model',
                     help='path to save log and model')
-parser.add_argument('--snapshot_every', type=int, default=10, 
+parser.add_argument('--snapshot_every', type=int, default=1, 
                     help='snapshot freq, used for train model only')
 
 # GAN
