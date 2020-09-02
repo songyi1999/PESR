@@ -297,6 +297,10 @@ def main(argv=None):
         if args.phase == 'pretrain':
             print('Finish valid [%d/%d]. Best PSNR: %.4fdB. Cur PSNR: %.4fdB' \
                   %(epoch, args.num_epochs, best_psnr, val_psnr))
+            if epoch%args.snapshot_every == 0:
+                model_path = os.path.join(check_point, 'model_{}.pt'.format(epoch))
+                torch.save(G.module.state_dict(), model_path)
+                print('Saved snapshot model.')      
             if best_psnr < val_psnr:
                 best_psnr = val_psnr
                 model_path = os.path.join(check_point, 'best_model.pt')
